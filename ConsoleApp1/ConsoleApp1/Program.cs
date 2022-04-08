@@ -5,38 +5,18 @@ namespace ConsoleApp1
 {
     public  class Program
     {
-        public static bool areAnagram(string 1,string 2)
+        public static void Main() 
         { 
-            int n1 = str1.count1;
-            int n2 = str2.count2;
+            string str1="heart";
+            string str2="earth";
             if (n1!=n2)
-            {
-                return false;
-            }
-        }
-        str1.Sort();
-        str2.Sort();
-            for (int i =0; i< n1; i++)
-            if(str1[i]!=str2[i])
-            {
-            return false;
-            }
-       return true;
-      public static void main (string[] args)
-        {
-            ArrayList str1 = new ArrayList();
-            str1.Add('h');
-            str1.Add('e');
-            str1.Add('a');
-            str1.Add('r');
-            str1.Add('t');
-            Arraylist.str2 = new ArrayList();
-            str2.Add('e');
-            str2.Add('a');
-            str2.Add('r');
-            str2.Add('t');
-            str2.Add('h');
-            if (areAnagram(str1.str2))
+            char[] ch1=str1.ToLower().ToCharArray();
+            char[] ch2=str2.ToLower().ToCharArray();
+            Array.Sort(ch1);
+            Array.Sort(ch2);
+            string val1=new string(ch1);
+            string val2=new string(ch2);
+            if(val1== val2)
             {
                 Console.WriteLine("the two strings are" + "anagram of each other");
             }
@@ -46,6 +26,6 @@ namespace ConsoleApp1
             }
         }
     }
-} 
+ 
 
 
